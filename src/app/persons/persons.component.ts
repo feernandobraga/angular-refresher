@@ -18,7 +18,9 @@ export class PersonsComponent implements OnInit, OnDestroy {
         this.personList = persons;
       }
     );
-    this.prsService.fetchPersons();
+    setTimeout(() => {
+      this.prsService.fetchPersons();
+    }, 2000);
   }
 
   // Code Before API implementation
