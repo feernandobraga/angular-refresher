@@ -1,2 +1,13 @@
-<app-person-input></app-person-input>
+<!-- Here I grabbed the personCreate method from the child component person-input.component.ts
+     The child component pass information through to the parent via an event (event emitter)
+     Then, we can receive the data ($event) passed and then handle it on the onPersonCreated method in the app.component.ts
+-->
+
+<!-- **********
+  <app-person-input (personCreate)="onPersonCreated($event)"></app-person-input>
 <app-persons [personList]="persons" ></app-persons>
+************ -->
+
+<a routerLink="/">Person List </a> | <a routerLink="/input">Input</a>
+<hr>
+<router-outlet></router-outlet>
